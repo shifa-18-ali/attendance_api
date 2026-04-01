@@ -22,7 +22,7 @@ const UserSchema: Schema = new Schema<IUser>({
   password: {type:String, required:true},
   role: { type: String, enum: ["admin", "employee"], default: "employee" },
   branch: String,
-  proof: { type: String, unique: true,sparse:true },
+  
   designation: String,
   dob: String,
   contact: Number,
